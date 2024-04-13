@@ -19,7 +19,7 @@ void main() {
   // Set<int> set = {1, 5, 4, 3, 0, 12}; // сет хранит уникальные значения 
   // print(list.toSet().toList());
 
-  Set<String> set = {"1", "asd", "qwe", "track", "auto"};
+    Set<String> set = {"1", "asd", "qwe", "track", "auto"};
 
   //Set<String> set2 = set.union({"asfg","asfgas","asdqg"});// union - создает новый не меняя старый сет и соединяет 2 сета
   // у сета нет индекса
@@ -35,5 +35,5 @@ void main() {
   // set.removeAll({"1", "qwe"});//удаляет несколько элементов
   // print(set.join(" * ")); превращает сет в строку + указывает разделитель между элементами
   // print(set.skip(3)); // возвращает новый сет с удалением элементов от 1 до введенного элмента
-
+  print(set);
 }
