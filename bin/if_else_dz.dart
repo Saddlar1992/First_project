@@ -14,6 +14,7 @@ void main() {
   } else {
     print("Столько пальцев нет)))");
   }
+  
   int min = 0;
   if (min < 15) {
     print("1 четверть");
@@ -24,34 +25,32 @@ void main() {
   } else if (min < 60) {
     print("4 четверть");
   }
-  String lang = "en";
-  Set arrRU = { "Понедельник" ,
-      "Вторник" ,
-      "Среда" , 
-      "Четверг" ,
-      "Пятница" ,
-      "Суббота" , 
-      "Воскресенье" };
-  Set arrEn = {"Monday" ,
-      "Tuesday" ,
-      "Wednesday" ,
-      "Thursday" ,
-      "Friday" ,
-      "Saturday" ,
-      "Sunday" }; 
-
-  if (lang == "ru") {
-    print(arrRU);
-  } else if (lang == "en") {
-    print(arrEn);
+  
+  String str = "Mastov";
+  if (str.startsWith("M")) {
+    print("Да");
+  } else {
+    print("нет");
   }
-  String a = "Красный";
-  if(a == "Зеленый") {
+  
+  String color = "Красный";
+  if(color == "Зеленый") {
     print("Можно идти");
-} else if (a == "Желтый") {
+} else if (color == "Желтый") {
   print("Надо приготовиться");
-}else if (a == "Красный") {
+}else if (color == "Красный") {
   print("Надо стоять");
 }
- }
-    
+
+String lang = "en";
+List<String> arr;
+if (lang == "ru") {
+  arr = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Cуббота" , "Воскресенье" ];
+} else if (lang == "en") {
+  arr = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+} else {
+  "Неверное значение переменной lang";
+  return;
+}
+  print(arr);
+}
