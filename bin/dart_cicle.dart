@@ -32,14 +32,11 @@ int func(String a, String b) {
   }
   return counter;
 }
-
 void numberinRange() {
-    stdout.write("Введите начало диапозона: ");
+    print("Введите начало диапозона: ");
     int start = int.tryParse(stdin.readLineSync()?? "") ?? 0;
-
-    stdout.write("Введите конец диапозона :");
+    print("Введите конец диапозона :");
     int end = int.tryParse(stdin.readLineSync()?? "") ?? 0 ;
-
     int sum = 0;
     for (int i = start; i <= end; i++) {
       sum += i;
